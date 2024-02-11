@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bill Timo</title>
+    <link rel="stylesheet" href="icon/css/all.css" />
+  </head>
+  <style>
+    body {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      /* background-color: gray; */
+    }
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      width: 300px;
+      background-color: whitesmoke;
+    }
+    .header {
+      height: 40px;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: white;
+    }
+    .icon-left {
+      color: #563d81;
+    }
+    .icon-right {
+      color: #563d81;
+    }
+    .content {
+      width: 100%;
+      background-color: white;
+      height: auto;
+      position: relative;
+    }
+    .header-content {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: transparent;
+    }
+    .main-content{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: white;
+    }
+    .main-header {
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+      background-color: #30cc9a;
+      width: 100%;
+      color: white;
+      text-align: center;
+    }
+    .success {
+      border-radius: 50%;
+      background-color: white;
+      color: #30cc9a;
+    }
+    .main {
+      text-align: center;
+    }
+    .title {
+      font-size: 24px;
+      font-weight: bold;
+    }
+    .date{
+      font-size: 13px;
+      color: #9ca3af;
+    }
+    .money{
+      font-size: 30px;
+      font-weight: bold;
+    }
+    .cate-money{
+      font-size: 13px;
+      font-weight: lighter;
+    }
+    .line {
+      width: 100%;
+      border: 1px dashed #e5e7eb;
+    }
+    .line-solid {
+      margin-left: 10%;
+      text-align: center;
+      width: 80%;
+      border: 1px solid #e5e7eb;
+    }
+
+    .des-1 {
+      display: grid;
+      grid-template-columns: 30% 70%;
+      grid-template-rows: 25px 25px;
+    }
+    .color-blur{
+      color: #9ca3af;
+    }
+    .des-2 {
+      display: grid;
+      grid-template-columns: 30% 70%;
+      grid-template-rows: 25px 25px;
+    }
+    .des-3 {
+      display: grid;
+      grid-template-columns: 30% 70%;
+    }
+    .hold {
+      border-radius: 20px;
+      text-align: center;
+      top: 97%;
+      left: 38%;
+      width: 50%;
+      height: 20px;
+      z-index: 1111;
+      background-color: white;
+      position: absolute;
+      content: "";
+      padding: 5px 10px;
+    }
+    .hold i {
+      margin-right: 10px;
+    }
+    .footer {
+      width: 100%;
+      margin-top: 20px;
+      background-color: white;
+      height: 320px;
+      overflow: hidden;
+      transition: height 0.5s ease-in-out;
+    }
+    #scrool.active{
+      height: 60px;
+    }
+    .footer-header {
+      background-color: whitesmoke;
+      padding: 30px 0px 15px 0px ;
+    }
+    .footer-header i {
+      margin-left: 10px;
+    }
+    .footer-content{
+      background-color: white;
+    }
+      .main-footer{
+      height: 380px;
+    }
+    ul {
+      padding: 10px;
+    }
+    li {
+      list-style: none;
+    }
+    .first-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .sticky {
+      width: 90px;
+      height: 25px;
+      border-radius: 20px;
+      padding: 8px 8px;
+      background-color: #dfd5f0;
+      color: #563d81;
+      float: right;
+      text-align: center;
+    }
+    .line-straight {
+      border-bottom: 1px solid #f3f4f6;
+    }
+    .padding-icon {
+      padding: 0 10px;
+    }
+    .fix-icon {
+      width: 20px;
+    }
+    .special {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+    .wraper {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .item {
+      display: flex;
+      align-items: center;
+      width: 90%;
+      height: 50px;
+      margin: 0 5%;
+    }
+    .item:first-child {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: 0px 5% 0px 5%;
+    }
+    .item:last-child {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    #up{
+      cursor: pointer;
+    }
+    #up.active{
+      display: none;
+    }
+    #down.active {
+      display: inline-block;
+      cursor: pointer;
+    }
+    #down {
+      display: none;
+    }
+    .wraper.active{
+      display: none;
+    }
+    .close{
+      cursor: pointer;
+      width: 100%;
+      color:#563d81;
+      font-size: 18px;
+      padding: 10px 20px;
+      outline: none;
+      border: none;
+    }
+      .switch {
+      position: relative;
+      display: inline-block;
+      width: 60px;
+      height: 34px;
+    }
+    .switch input { 
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
+    .slider {
+      position: absolute;
+      cursor: pointer;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #ccc;
+      -webkit-transition: .4s;
+      transition: .4s;
+    }
+
+    .slider:before {
+      position: absolute;
+      content: "";
+      height: 26px;
+      width: 26px;
+      left: 4px;
+      bottom: 4px;
+      background-color: white;
+      -webkit-transition: .4s;
+      transition: .4s;
+    }
+
+    input:checked + .slider {
+      background-color: #22c55e;
+    }
+
+    input:focus + .slider {
+      box-shadow: 0 0 1px #22c55e;
+    }
+
+    input:checked + .slider:before {
+      -webkit-transform: translateX(26px);
+      -ms-transform: translateX(26px);
+      transform: translateX(26px);
+    }
+
+    /* Rounded sliders */
+    .slider.round {
+      border-radius: 34px;
+    }
+
+    .slider.round:before {
+      border-radius: 50%;
+    }
+
+  </style>
+  <body>
+    <div class="container">
+      <div class="header">
+        <div class="icon-left"><i class="fa-solid fa-chevron-left"></i></div>
+        <div class="text-header">Bien nhan</div>
+        <div class="icon-right"><i class="fa-solid fa-message"></i></div>
+      </div>
+      <div class="header-content">
+        <div class="icon-timo">icon timo</div>
+        <div class="text-right">
+          Ma GD:658829 <i class="fa-regular fa-copy"></i>
+        </div>
+      </div>
+      <div class="content">
+        <div class="main-header">
+          <i class="fa-solid fa-check success"></i> Giao dich thanh cong
+        </div>
+        <div class="main-content">
+        
+          <div class="main">
+            <div class="title">Chuyen Tien</div>
+            <div class="date">08/02/2024 13:01</div>
+            <div class="money">246.000<span class="cate-money"> VND</span></div>
+          </div>
+          <p class="line"></p>
+          <div class="main-footer">
+            <div class="des-1">
+              <p class="color-blur">TU</p>
+              <p>Nguyen thuy trang</p>
+              <p></p>
+              <p class="color-blur">Vietcapitalbank</p>
+              <p></p>
+              <p class="color-blur">0124654815</p>
+            </div>
+            <p class="line-solid"></p>
+            <div class="des-2">
+              <p class="color-blur">DEN</p>
+              <p>Nguyen thuy trang</p>
+              <p></p>
+              <p class="color-blur">Vietcapitalbank</p>
+              <p></p>
+              <p class="color-blur">0124654815</p>
+            </div>
+            <p class="line-solid"></p>
+            <div class="des-3">
+              <p class="color-blur">MO TA</p>
+              <p>
+             QR - move money by timo QR Widget
+              </p>
+            </div>
+          </div>
+          <span class="hold"
+            ><i class="fa-regular fa-face-smile"></i> Giu de phan hoi</span
+          >
+        </div>
+      </div>
+      <div class="footer" id="scrool">
+        <div class="footer-header color-blur">
+         <span id="">Thong tin khac <span>
+          <span id="up"><i class="fa-solid fa-chevron-up"></i> </span>
+          <span id="down"><i class="fa-solid fa-chevron-down"></i> </span>
+        </div>
+        <div class="footer-content">
+          <div class="wraper" >
+            <div class="item">
+              <div class="">
+                <i class="fa-solid fa-layer-group padding-icon"></i>Phan loai
+              </div>
+              <span class="sticky">
+                <i class="fa-solid fa-bowl-food"></i
+                ><i class="fa-solid fa-glass-water"></i>An uong</span
+              >
+            </div>
+            <span class="line-straight"></span>
+            <div class="item">
+              <i class="fa-solid fa-pencil padding-icon"></i>Them ghi chu
+            </div>
+            <span class="line-straight"></span>
+
+            <div class="item">
+              <i class="fa-solid fa-file padding-icon fix-icon"></i>Dinh kem tep
+            </div>
+            <span class="line-straight"></span>
+            <div class="item">
+              <i class="fa-solid fa-share-from-square padding-icon"></i>Chia se
+              bien nhan
+            </div>
+            <span class="line-straight"></span>
+            <div class="item">
+              <div class="">
+                <i class="fa-solid fa-spinner padding-icon"></i>Tien trinh bao cao
+              </div>
+              <div class="">
+              <label class="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+              </label>
+            </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-button">
+          <button class="close">Dong</button>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script>
+    const up = document.getElementById("up");
+    const down = document.getElementById("down");
+    const close = document.getElementById("close");
+    const hidden = document.getElementById("hidden");
+    const scrool = document.getElementById("scrool");
+
+    if (up) {
+      up.addEventListener("click", () => {
+        scrool.classList.add("active");
+        down.classList.add("active");
+        up.classList.add("active");
+      });
+    }
+    if (down) {
+      down.addEventListener("click", () => {
+        down.classList.remove("active");
+        scrool.classList.remove("active");
+        up.classList.remove("active");
+      });
+    }
+  </script>
+</html>
