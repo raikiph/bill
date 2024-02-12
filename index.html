@@ -60,6 +60,10 @@
       background-color: white;
     }
     .main-header {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 30px;
       border-top-left-radius: 5px;
       border-top-right-radius: 5px;
       background-color: #30cc9a;
@@ -67,7 +71,14 @@
       color: white;
       text-align: center;
     }
-    .success {
+    .icon-success {
+      margin-right: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 20px;
+      height: 20px;
+      font-size: 20px;
       border-radius: 50%;
       background-color: white;
       color: #30cc9a;
@@ -276,7 +287,9 @@
       -webkit-transition: .4s;
       transition: .4s;
     }
-
+    .text-upper{
+      text-transform: uppercase;
+    }
     input:checked + .slider {
       background-color: #22c55e;
     }
@@ -316,10 +329,12 @@
       </div>
       <div class="content">
         <div class="main-header">
-          <i class="fa-solid fa-check success"></i> Giao dich thanh cong
+          <div class="icon-success">
+          <i class="fa-solid fa-check success"></i>
+          </div>
+          <div class="text-success">Giao dich thanh cong</div>
         </div>
         <div class="main-content">
-        
           <div class="main">
             <div class="title">Chuyen Tien</div>
             <div class="date">08/02/2024 13:01</div>
@@ -329,7 +344,7 @@
           <div class="main-footer">
             <div class="des-1">
               <p class="color-blur">TU</p>
-              <p>Nguyen thuy trang</p>
+              <p class="text-upper">Nguyen thuy trang</p>
               <p></p>
               <p class="color-blur">Vietcapitalbank</p>
               <p></p>
@@ -338,7 +353,7 @@
             <p class="line-solid"></p>
             <div class="des-2">
               <p class="color-blur">DEN</p>
-              <p>Nguyen thuy trang</p>
+              <p class="text-upper">Nguyen thuy trang</p>
               <p></p>
               <p class="color-blur">Vietcapitalbank</p>
               <p></p>
@@ -402,9 +417,9 @@
             </div>
           </div>
         </div>
-        <div class="footer-button">
-          <button class="close">Dong</button>
-        </div>
+      </div>
+      <div class="footer-button">
+        <button class="close"><a href="techcom.html">Bill techcom</a></button>
       </div>
     </div>
   </body>
