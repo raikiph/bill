@@ -14,7 +14,12 @@
       align-items: center;
     }
     .container {
-      width: 400px;
+      width: 360px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: whitesmoke;
     }
     .upper-bold {
       color: #71379D;
@@ -22,12 +27,13 @@
       font-weight: bolder;
     }
     .header {
+      width: 100%;
       height: 50px;
       display: flex;
       justify-content: center;
       align-items: center;
-      background-color: whitesmoke;
       font-size: 24px;
+      background-color: whitesmoke;
     }
     .text-header{
         color: #71379D;
@@ -217,9 +223,25 @@
         padding: 10px 0px;
         border-radius: 5px;
     }
+    .wraper-1{
+        width: 340px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+
+    }
+    .wraper-2{
+        width: 340px;
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+    }
   </style>
   <body>
     <div class="container">
+      <div class="wraper-1">
       <div class="header">
         <div class="icon-header">LogoTpbank</div>
         <div class="text-header"><span class="upper-bold">tp</span>Bank</div>
@@ -278,7 +300,9 @@
             </div>
           </div>
         </div>
+      </div>
         <span class="line-des"></span>
+        <div class="wraper-2">
         <div class="des-1">
             <p class="text-des">Ma giao dich</p>
             <p class="">2301654515</p>
@@ -311,6 +335,7 @@
               <div class="footer-right"><a href="momo.html">Trang chu</a></div>
           </div>
         </div>
+      </div>
       </div>
     </div>
   </body>

@@ -15,8 +15,10 @@
       /* background-color: gray; */
     }
     .container {
-      width: 400px;
+      width: 360px;
       background-color: #fef7e7;
+      display: flex;
+      flex-direction: column;
     }
     .icon-success {
       margin: 20px 0px;
@@ -96,50 +98,58 @@
       cursor: pointer;
       font-size: 20px;
     }
+    .wraper {
+      width: 340px;
+      display: flex;
+      flex-direction: column;
+      margin-left: 20px;
+    }
   </style>
   <body>
     <div class="container">
-      <div class="header">
-        <div class="icon-success">
-          <i class="fa-solid fa-check success"></i>
+      <div class="wraper">
+        <div class="header">
+          <div class="icon-success">
+            <i class="fa-solid fa-check success"></i>
+          </div>
+          <div class="text-bank">
+            <span class="highlight">Techcom</span>bank<span> icon techcom</span>
+          </div>
         </div>
-        <div class="text-bank">
-          <span class="highlight">Techcom</span>bank<span> icon techcom</span>
+        <div class="content">
+          <div class="status">Chuyen thanh cong</div>
+          <div class="text-content">
+            <span class="text-none">toi</span> nguyen tinh vnd
+          </div>
+          <div class="money-content">560,000</div>
         </div>
-      </div>
-      <div class="content">
-        <div class="status">Chuyen thanh cong</div>
-        <div class="text-content">
-          <span class="text-none">toi</span> nguyen tinh vnd
+        <div class="des-1">
+          <div class="text-blur">Thong tin chi tiet</div>
+          <div>Ngan hang TMCP ngoai thuong Viet Nam</div>
+          <div>
+            <span>8869</span>
+            <span>2500</span>
+            <span>3833</span>
+          </div>
         </div>
-        <div class="money-content">560,000</div>
-      </div>
-      <div class="des-1">
-        <div class="text-blur">Thong tin chi tiet</div>
-        <div>Ngan hang TMCP ngoai thuong Viet Nam</div>
-        <div>
-          <span>8869</span>
-          <span>2500</span>
-          <span>3833</span>
+        <div class="des-2">
+          <div class="text-blur">Loi nhan</div>
+          <div>Demo bill Techcombank</div>
         </div>
-      </div>
-      <div class="des-2">
-        <div class="text-blur">Loi nhan</div>
-        <div>Demo bill Techcombank</div>
-      </div>
-      <div class="des-3">
-        <div class="text-blur">Ngay thuc hien</div>
-        <div>24 thang 2, 2024</div>
-      </div>
-      <div class="des-4">
-        <div class="text-blur">Ma giao dich</div>
-        <div>MT25684684988</div>
-      </div>
-      <div class="footer">
-        <div class="icon-footer">
-          <i class="fa-solid fa-arrow-up-from-bracket"></i>
+        <div class="des-3">
+          <div class="text-blur">Ngay thuc hien</div>
+          <div>24 thang 2, 2024</div>
         </div>
-        <div class="submit-footer"><a href="tpbank.html">Hoan thanh</a></div>
+        <div class="des-4">
+          <div class="text-blur">Ma giao dich</div>
+          <div>MT25684684988</div>
+        </div>
+        <div class="footer">
+          <div class="icon-footer">
+            <i class="fa-solid fa-arrow-up-from-bracket"></i>
+          </div>
+          <div class="submit-footer"><a href="tpbank.html">Hoan thanh</a></div>
+        </div>
       </div>
     </div>
   </body>

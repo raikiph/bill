@@ -19,7 +19,7 @@
       justify-content: center;
       align-items: center;
       flex-direction: column;
-      width: 380px;
+      width: 360px;
       background-color: whitesmoke;
     }
     .header {
@@ -205,11 +205,6 @@
       justify-content: space-around;
       align-items: center;
     }
-    .wraper {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-    }
     .item {
       display: flex;
       align-items: center;
@@ -252,6 +247,7 @@
       padding: 10px 20px;
       outline: none;
       border: none;
+      background-color: transparent;
     }
       .switch {
       position: relative;
@@ -312,7 +308,26 @@
     .slider.round:before {
       border-radius: 50%;
     }
-
+    .wraper-1{
+        background-color: white;
+        width: 340px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .wraper-2{
+        width: 340px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 10px;
+        margin-top: 10px;
+        padding-bottom: 20px;
+    }
+    .footer-button{
+      width: 100%;
+    }
   </style>
   <body>
     <div class="container">
@@ -327,6 +342,7 @@
           Ma GD:658829 <i class="fa-regular fa-copy"></i>
         </div>
       </div>
+      <div class="wraper-1">
       <div class="content">
         <div class="main-header">
           <div class="icon-success">
@@ -372,6 +388,8 @@
           >
         </div>
       </div>
+    </div>
+    <div class="wraper-2">
       <div class="footer" id="scrool">
         <div class="footer-header color-blur">
          <span id="">Thong tin khac <span>
@@ -379,7 +397,7 @@
           <span id="down"><i class="fa-solid fa-chevron-down"></i> </span>
         </div>
         <div class="footer-content">
-          <div class="wraper" >
+          <div class="wraper-1" >
             <div class="item">
               <div class="">
                 <i class="fa-solid fa-layer-group padding-icon"></i>Phan loai
@@ -421,6 +439,7 @@
       <div class="footer-button">
         <button class="close"><a href="techcom.html">Bill techcom</a></button>
       </div>
+    </div>
     </div>
   </body>
   <script>
