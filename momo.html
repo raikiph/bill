@@ -14,6 +14,7 @@
       align-items: center;
     }
     .container {
+      position: relative;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -77,34 +78,44 @@
       width: 340px;
       border: 1px dashed #9ca3af;
     }
-    .wraper-1{
-        background-color: white;
-        width: 340px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        border-bottom-left-radius: 10px;
-        border-bottom-right-radius: 10px;
+    .wraper-1 {
+      background-color: white;
+      width: 340px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
     }
-    .wraper-2{
-        background-color: white;
-        width: 340px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        border-radius: 10px;
-        margin-top: 10px;
-        padding-bottom: 20px;
+    .wraper-2 {
+      background-color: white;
+      width: 340px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border-radius: 10px;
+      margin-top: 10px;
+      padding-bottom: 20px;
     }
-    .wraper-3{
-        background-color: white;
-        width: 340px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        border-radius: 10px;
-        margin-top: 10px;
+    .wraper-3 {
+      background-color: white;
+      width: 340px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border-radius: 10px;
+      margin-top: 10px;
+    }
+    .wraper-4 {
+      width: 340px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 10px;
+      background-color: white;
+      padding: 10px 0px;
+      border-radius: 10px;
     }
     .des-title {
       padding: 10px 0px;
@@ -121,18 +132,18 @@
       display: flex;
       align-items: center;
     }
-    .icon-col{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 30px;
-        height: 30px;
-        border-radius: 50%;
-        margin-right: 10px;
-        background-color: #E82C93;
-        color: white;
+    .icon-col {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      margin-right: 10px;
+      background-color: #e82c93;
+      color: white;
     }
-    .des-border-special{  
+    .des-border-special {
       padding: 10px 0px;
       width: 320px;
       background-color: white;
@@ -142,25 +153,25 @@
       border: 1px dashed #7b1f4e;
       border-radius: 10px;
     }
-    .dash i{
-        margin:0 10px;
+    .dash i {
+      margin: 0 10px;
     }
-    .dash{
-        width: 70%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+    .dash {
+      width: 70%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
-    .sticky-2{
-        width: 20%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: #FED6E8;
-        color: #E82C93;
-        border-radius: 10px;
-        padding: 10px 5px;
-        margin-right: 10px;
+    .sticky-2 {
+      width: 20%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #fed6e8;
+      color: #e82c93;
+      border-radius: 10px;
+      padding: 10px 5px;
+      margin-right: 10px;
     }
     .des-border {
       width: 340px;
@@ -168,30 +179,59 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      background-color: #E6F7FF;
-      color: #1A69C8;
+      background-color: #e6f7ff;
+      color: #1a69c8;
       border-bottom-left-radius: 10px;
       border-bottom-right-radius: 10px;
     }
-    .code-number i{
-        color: #B94986;
+    .code-number i {
+      color: #b94986;
     }
-    .sticky-1{
-        border-radius: 20px;
-        padding: 5px 10px;
-        background-color: #DAF7BF;
-        color: #5EBD27;
+    .sticky-1 {
+      border-radius: 20px;
+      padding: 5px 10px;
+      background-color: #daf7bf;
+      color: #5ebd27;
     }
-    .lane{
-        display: flex;
-        width: 320px;
-        padding: 20px 0px;
+    .lane {
+      display: flex;
+      width: 320px;
+      padding: 20px 0px;
     }
-    .text-upper{
-        text-transform: uppercase;
+    .text-upper {
+      text-transform: uppercase;
     }
-    .text-blur{
+    .text-blur {
       color: #9ca3af;
+    }
+    .footer {
+      position: fixed;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 320px;
+      margin: 0px 10px;
+    }
+    .button-left {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 10px 0px;
+      width: 45%;
+      color: #d63a8e;
+      border: 1px solid #d63a8e;
+      border-radius: 5px;
+    }
+    .button-right {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 45%;
+      padding: 10px 0px;
+      background-color: #5ebd27;
+      border-radius: 10px;
+      background-color: #d82db8;
+      color: white;
     }
   </style>
   <body>
@@ -214,19 +254,21 @@
         </div>
       </div>
       <div class="wraper-1">
-      <div class="des-title">
-        <div class="text-blur">Trang thai</div>
-        <div class="sticky-1">Thanh cong</div>
-      </div>
-      <div class="des-title">
-        <div class="text-blur">Thoi gian</div>
-        <div class="">20:00 - 01/12/20224</div>
-      </div>
-      <span class="line-des"></span>
-      <div class="des-title">
-        <div class="text-blur">Ma giao dich</div>
-        <div class="code-number">456513516646 <i class="fa-regular fa-copy"></i></div>
-      </div>
+        <div class="des-title">
+          <div class="text-blur">Trang thai</div>
+          <div class="sticky-1">Thanh cong</div>
+        </div>
+        <div class="des-title">
+          <div class="text-blur">Thoi gian</div>
+          <div class="">20:00 - 01/12/20224</div>
+        </div>
+        <span class="line-des"></span>
+        <div class="des-title">
+          <div class="text-blur">Ma giao dich</div>
+          <div class="code-number">
+            456513516646 <i class="fa-regular fa-copy"></i>
+          </div>
+        </div>
         <div class="des-title">
           <div class="text-blur">Tai khoan/the</div>
           <div class="">Vi MoMo</div>
@@ -236,70 +278,76 @@
           <div class="">Mien phi</div>
         </div>
         <div class="des-border">
-            <div class=""><i class="fa-solid fa-globe"></i> Lien he ho tro</div>
-        </div>  
-    </div>
-    <div class="wraper-2">
+          <div class=""><i class="fa-solid fa-globe"></i> Lien he ho tro</div>
+        </div>
+      </div>
+      <div class="wraper-2">
         <div class="des-title">
-            <div class="text-blur">So the/TK</div>
-            <div class="">6464984651465165</div>
+          <div class="text-blur">So the/TK</div>
+          <div class="">6464984651465165</div>
         </div>
         <div class="des-title">
-            <div class="text-blur">Ngan hang</div>
-            <div class="">Tmcp quan doi phat trien</div>
+          <div class="text-blur">Ngan hang</div>
+          <div class="">Tmcp quan doi phat trien</div>
         </div>
         <div class="des-title">
-            <div class="text-blur">Nguoi nhan</div>
-            <div class="">Doan Trung tan</div>
+          <div class="text-blur">Nguoi nhan</div>
+          <div class="">Doan Trung tan</div>
         </div>
         <div class="des-title">
-            <div class="text-blur">So tien</div>
-            <div class="">65.000VND</div>
+          <div class="text-blur">So tien</div>
+          <div class="">65.000VND</div>
         </div>
         <div class="des-title">
-            <div class="text-blur">Tin nhan</div>
-            <div class="">Thanh toan 9215</div>
+          <div class="text-blur">Tin nhan</div>
+          <div class="">Thanh toan 9215</div>
         </div>
-    <div class="des-border-special">
-        <div class="dash"><i class="fa-regular fa-lightbulb"></i> Dat ten goi nho de chuyen tien nhanh hon vao lan sau</div>
-        <div class="sticky-2">Dat ten</div>
-    </div>
-    </div>
-    <div class="lane">
+        <div class="des-border-special">
+          <div class="dash">
+            <i class="fa-regular fa-lightbulb"></i> Dat ten goi nho de chuyen
+            tien nhanh hon vao lan sau
+          </div>
+          <div class="sticky-2">Dat ten</div>
+        </div>
+      </div>
+      <div class="lane">
         <div class="text-upper">Theo doi chuyen tien</div>
-    </div>
-<div class="wraper-3">
-    <div class="des-col">
-        <div class="icon-col">
+      </div>
+      <div class="wraper-3">
+        <div class="des-col">
+          <div class="icon-col">
             <i class="fa-solid fa-check"></i>
-        </div>
-        <div class="text-col">
+          </div>
+          <div class="text-col">
             <div class="">Momo ghi nhan giao dich</div>
             <div class="">20:00 - 01/02/2024</div>
+          </div>
         </div>
-    </div>
-    <div class="des-col">
-        <div class="icon-col">
+        <div class="des-col">
+          <div class="icon-col">
             <i class="fa-solid fa-check"></i>
+          </div>
+          <div class="text-col">
+            <div class="">Ngan hang xu ly thanh cong</div>
+            <div class="">20:00 - 01/02/2024</div>
+          </div>
         </div>
-        <div class="text-col">
-        <div class="">Ngan hang xu ly thanh cong</div>
-        <div class="">20:00 - 01/02/2024</div>
-        </div>
-    </div>
-    <div class="des-col">
-        <div class="icon-col">
+        <div class="des-col">
+          <div class="icon-col">
             <i class="fa-solid fa-check"></i>
+          </div>
+          <div class="text-col">
+            <div class="">Giao dich thanh cong</div>
+            <div class="">20:00 - 01/02/2024</div>
+          </div>
         </div>
-        <div class="text-col">
-        <div class="">Giao dich thanh cong</div>
-        <div class="">20:00 - 01/02/2024</div>
-        </div>  
-    </div>
-</div>
-</div>
-
-      <div class="footer"></div>
+      </div>
+      <div class="wraper-4">
+        <div class="footer">
+          <div class="button-left">Chuyen tien</div>
+          <div class="button-right">Chia tien</div>
+        </div>
+      </div>
     </div>
     <!-- <div class="img"><img src="img/momo2.jpg" alt="" /></div> -->
   </body>
